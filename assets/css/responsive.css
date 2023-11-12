@@ -10,6 +10,7 @@ Checking Size- 1000px */
     }
     .navigation-bar{
         width: 870px;
+        display: block;
     }
     /* Banner Section */
     .banner {
@@ -75,7 +76,7 @@ Checking Size- 800px */
         display: block;
     }
     /* Header Section */
-    .navigation-bar ul li:last-child{
+    .navigation-bar li:last-child{
         display: none;
     }
     .logo {
@@ -83,6 +84,7 @@ Checking Size- 800px */
     }
     .navigation-bar{
         width: 650px;
+        display: block;
     }
     /* Banner Section */
     .banner-area::before {
@@ -195,19 +197,19 @@ Checking Size- 400px */
     .pb{
         padding-bottom: 60px;
     }
-    .logo, .navigation-bar ul li {
+    .logo, .navigation-bar li {
         text-align: center;
     }
     .banner p span, .about-img{
         animation: normal;
     }
-    .banner-area::before, .banner h4 span::before {
+    .navigation-bar, .banner-area::before, .banner h4 span::before {
         display: none;
     }
-    .logo, .navigation-bar, .navigation-bar ul li, .banner, .about-info, .single-service, .skill-box, .single-project, .single-testimonial, .contact-form, .contact-map, .single-footer {
+    .logo, .navigation-bar, .navigation-bar li, .banner, .about-info, .single-service, .skill-box, .single-project, .single-testimonial, .contact-form, .contact-map, .single-footer {
         width: 100%;
     }
-    .navigation-bar ul li, .about, .services, .skills, .projects, .contact{
+    .navigation-bar li, .about, .services, .skills, .projects, .contact{
         display: block;
     }
     .about .title, .about .title h4, .skill-box h4, .single-footer{
@@ -230,35 +232,41 @@ Checking Size- 400px */
     .navigation-bar{
         margin-top: 10px;
     }
-    .navigation-bar ul li{
+    .navigation-bar li{
         padding: 15px;
         transition: .3s;
     }
-    .navigation-bar ul li a{
+    .navigation-bar li a{
         font-size: 16px;
         margin-left: 0;
     }
-    .navigation-bar ul li:hover{
+    .navigation-bar li:hover{
         background-color: var(--primary);
     }
-    .navigation-bar ul li:hover a{
+    .navigation-bar li:hover a{
         color: var(--white);
     }
-    .navigation-bar ul li:hover a::before {
+    .navigation-bar li:hover a::before {
         transform: scale(1);
     }
-    .navigation-bar ul li:last-child:hover{
+    .navigation-bar li:last-child:hover{
         background-color: transparent;
     }
-    .navigation-bar ul li:last-child:hover a{
+    .navigation-bar li:last-child:hover a{
         color: var(--primary);
     }
-    .navigation-bar ul li:last-child:hover a::before{
+    .navigation-bar li:last-child:hover a::before{
         transform: scale(0) !important;
     }
-    .navigation-bar ul li a:last-child:hover::before{
+    .navigation-bar li a:last-child:hover::before{
         transform: scale(1) !important;
     }
+    .hamburger{
+        display: block;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
     /* Banner Section*/
     .banner{
         padding: 0;
@@ -373,7 +381,7 @@ Checking Size- 400px */
 
 /* Wide Device Layout 
 Checking Size- 500px */
-@media only screen and (min-width:480px) and (max-width:767){
+@media only screen and (min-width:480px) and (max-width:767px){
     .container{
         width: 450px;
     }

@@ -19,7 +19,8 @@
 */
 
 /* 00. Base */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');:root{
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+:root{
     --primary: #2a2a2a;
     --secondary: #767676;
     --button-hover: #ffa115;   
@@ -28,8 +29,6 @@
     --light-dark: #333;
     --light-grey: #ddd;
     --bg: #fcfcfc;        
-    /* font-family: 'Poppins', sans-serif;
-    font-family: 'Mulish', sans-serif; */
 }
 
 /* Universal Styles */
@@ -168,17 +167,17 @@ span{
     width: 1070px;
     text-align: right;
 }
-.navigation-bar ul li{
+.navigation-bar li{
     display: inline-block;
 }
-.navigation-bar ul li a{
+.navigation-bar li a{
     display: inline-block;
     margin-left: 25px;
     font-size: 17px;
     font-weight: 600;
     position: relative;
 }
-.navigation-bar ul li a::before{
+.navigation-bar li a::before{
     content: '';
     width: 100%;
     height: 2px;
@@ -189,8 +188,11 @@ span{
     transform: scale(0);
     transition: .3s;
 }
-.navigation-bar ul li a:hover::before{
+.navigation-bar li a:hover::before{
     transform: scale(1);
+}
+.hamburger{
+    display: none;
 }
 
 /* 02. Banner */
@@ -384,19 +386,19 @@ span{
     width: 96%;
 }
 .skill-box ul li:nth-child(2):after{
-    width: 92%;
+    width: 90%;
 }
 .skill-box ul li:nth-child(3):after{
-    width: 50%;
+    width: 30%;
 }
 .skill-box ul li:nth-child(4):after{
-    width: 70%;
+    width: 10%;
 }
 .skill-box ul li:nth-child(5):after{
-    width: 80%;
+    width: 20%;
 }
 .skill-box:last-child ul li:nth-child(1):after{
-    width: 92%;
+    width: 90%;
 }
 .skill-box:last-child ul li:nth-child(2):after{
     width: 99%;
@@ -405,7 +407,7 @@ span{
     width: 96%;
 }
 .skill-box:last-child ul li:nth-child(4):after{
-    width: 93%;
+    width: 92%;
 }
 
 .skill-box ul li h4{
@@ -524,6 +526,11 @@ span{
     font-size: 18px;
     font-weight: 700;
     margin-top: 6px;
+}
+.project-btn{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* 08. Timelines */
