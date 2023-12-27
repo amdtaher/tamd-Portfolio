@@ -228,7 +228,7 @@ span{
 }
 .banner h4 span::before{
     content: '';
-    width: 50%;
+    width: 30%;
     height: 2px;
     position: absolute;
     top: 120px;
